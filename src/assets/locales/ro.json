@@ -79,7 +79,6 @@
   },
   "footer": {
     "legal": {
-      "disclaimer": "Disclaimer",
       "disclaimerText": "movie-web nu găzduiește niciun fișier, ci doar trimite la servicii terțe. Problemele juridice ar trebui abordate cu gazdele și furnizorii de fișiere. movie-web nu este responsabil pentru niciun fișier media afișat de furnizorii de video."
     },
     "links": {
@@ -179,7 +178,6 @@
     "menus": {
       "downloads": {
         "disclaimer": "Descărcările sunt luate direct de la furnizor. Movie-web nu are control cum descărcările sunt furnizate.",
-        "downloadPlaylist": "Descarcă lista de redare",
         "downloadSubtitle": "Descărcați subtitlul curente",
         "downloadVideo": "Descarcă video",
         "hlsDisclaimer": "Descărcările sunt preluate direct de la furnizor. movie-web nu are control asupra modului în care sunt furnizate descărcările. Vă rugăm să rețineți că descărcați o listă de redare HLS, aceasta este destinată utilizatorilor familiar cu streamingul avansat.",
@@ -262,6 +260,17 @@
       "api": {
         "text": "Metadatele API nu au putut fi încărcate, vă rugăm să vă verificați conexiunea la internet.",
         "title": "Nu s-a putut incărca API metadata"
+      },
+      "dmca": {
+        "badge": "Șters",
+        "text": "Această medie nu mai este valabilă din vina copyright-ului.",
+        "title": "Media a fost ștearsă"
+      },
+      "extensionPermission": {
+        "badge": "Permisune pierdută",
+        "button": "Folosește extensia",
+        "text": "Tu ai extensia, dar noi avem nevoie de permisiune ca să începem să folosim extensia.",
+        "title": "Configurează extensia"
       },
       "failed": {
         "badge": "Eșuat",
@@ -394,6 +403,11 @@
         "label": "Server personalizat",
         "urlLabel": "Adresa URL personalizată a serverului"
       },
+      "setup": {
+        "errorStatus": {
+          "title": "Ceva are nevoie de atenția ta"
+        }
+      },
       "title": "Conexiuni",
       "workers": {
         "addButton": "Adaugă un nou muncitor",
@@ -403,11 +417,6 @@
         "urlLabel": "Adresele URL ale lucrătorilor",
         "urlPlaceholder": "https://"
       }
-    },
-    "locale": {
-      "language": "Limba aplicației",
-      "languageDescription": "Limbajul aplicat întregii aplicații.",
-      "title": "Local"
     },
     "reset": "Resetare",
     "save": "Salvează",

@@ -41,6 +41,7 @@ function qualityToHlsLevel(quality: SourceQuality): number | null {
   );
   return found ? +found[0] : null;
 }
+
 function hlsLevelsToQualities(levels: Level[]): SourceQuality[] {
   return levels
     .map((v) => hlsLevelToQuality(v))
@@ -130,7 +131,7 @@ export function makeVideoElementDisplayInterface(): DisplayInterface {
         });
         hls.on(Hls.Events.ERROR, (event, data) => {
           console.error("HLS error", data);
-          if (data.fatal) {
+          if (data.fatal && src?.url === data.frag?.baseurl) {
             emit("error", {
               message: data.error.message,
               stackTrace: data.error.stack,
